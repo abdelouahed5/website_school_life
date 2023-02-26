@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <title>Document</title>
+    <style>
+        .pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.pagination > a,
+.pagination > span {
+	background-color: white;
+    
+	color: #636363;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 17px;
+	margin: 0 3px 5px;
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+	position: relative;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.pagination > span {
+	pointer-events: none;
+}
+.pagination svg {
+	height: 24px;
+	width: 24px;
+}
+.pagination > a:hover {
+	background-color: #171557;
+	color: #fff;
+}
+.pagination > a.page-active {
+	background-color: #171557;
+	color: #fff;
+}
+#pagination-icon{
+  background-color: rgb(245, 241, 241);
+}
+#pagination-icon:hover{
+    background-color:#171557 ;
+    color:
+#F65E40 ;
+}
+    </style>
+</head>
+<body>
+    <div class="pagination">
+      
+        <a href="#" id="pagination-icon" title="previous page"><svg fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></a>
+        <a href="#">1</a>
+        <a href="#" class="page-active">2</a>
+        <a href="#">3</a>
+        <span class="page-dots">...</span>
+        <a href="#">5</a>
+        <a href="#" id="pagination-icon" title="next page"><svg fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg></a>
+        
+    </div>
+    
+</body>
+</html>
